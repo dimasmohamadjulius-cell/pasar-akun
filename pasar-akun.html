@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="id" data-theme="gelap-neon">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pasar Akun — Jual Beli Akun Sosial Media</title>
+    <meta name="description" id="meta-desc" content="Pasar Akun — etalase jual beli akun sosial media: Instagram, TikTok, Facebook, YouTube, X, dan Telegram. Pilih akun yang tersedia, lalu chat penjual langsung via WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" id="og-title" content="Pasar Akun — Jual Beli Akun Sosial Media" />
+    <meta property="og:description" id="og-desc" content="Etalase jual beli akun sosial media. Pilih akun yang tersedia, lalu chat penjual langsung via WhatsApp." />
+    <meta property="og:locale" content="id_ID" />
+    <meta name="theme-color" content="#060a13" />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <style>
+      button, [role="button"], select, summary, input:not([type="checkbox"], [type="radio"]), textarea, a.btn { min-height: 2.25rem; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      /* ============ TEMA ============ */
+      [data-theme="gelap-neon"] { color-scheme: dark; --bg:#060a13; --bg2:#0a1526; --surface:#0d1526; --surface2:#121e36; --ink:#eaf1ff; --muted:#93a4c3; --line:#20304f; --accent:#2bffb8; --accent2:#38bdf8; --accent-ink:#02231a; --good:#2bffb8; --sold:#ff5d73; --shadow:0 10px 30px rgba(0,0,0,.45); }
+      [data-theme="terang-bersih"] { color-scheme: light; --bg:#f2f5fa; --bg2:#e6edf7; --surface:#ffffff; --surface2:#edf1f8; --ink:#0c1526; --muted:#5a6a89; --line:#d9e1ee; --accent:#0f62fe; --accent2:#0891b2; --accent-ink:#ffffff; --good:#07875a; --sold:#d92d20; --shadow:0 10px 26px rgba(15,40,90,.10); }
+      [data-theme="emas-mewah"] { color-scheme: dark; --bg:#0a0805; --bg2:#171106; --surface:#151006; --surface2:#1f180a; --ink:#f7edd3; --muted:#b3a37e; --line:#33270f; --accent:#e3b93c; --accent2:#f5d67b; --accent-ink:#241a02; --good:#a8c256; --sold:#e0654a; --shadow:0 10px 30px rgba(0,0,0,.5); }
+      [data-theme="laut-dalam"] { color-scheme: dark; --bg:#03141f; --bg2:#062635; --surface:#06222f; --surface2:#0a3247; --ink:#e2f4fd; --muted:#8fb8cc; --line:#11455c; --accent:#22d3ee; --accent2:#2dd4bf; --accent-ink:#02222b; --good:#2dd4bf; --sold:#fb7185; --shadow:0 10px 30px rgba(0,0,0,.45); }
+      [data-theme="senja"] { color-scheme: dark; --bg:#1f0c16; --bg2:#33101f; --surface:#2b1322; --surface2:#3a1b2e; --ink:#ffeedd; --muted:#cf9d88; --line:#4d2439; --accent:#ff7a4d; --accent2:#ffb03a; --accent-ink:#2e0f02; --good:#9edb6a; --sold:#ff5d73; --shadow:0 10px 30px rgba(0,0,0,.45); }
+      [data-theme="hutan"] { color-scheme: dark; --bg:#08130c; --bg2:#0e2113; --surface:#0e1f12; --surface2:#15301c; --ink:#e9f7ec; --muted:#9dbfa6; --line:#204429; --accent:#4ade80; --accent2:#a3e635; --accent-ink:#05230e; --good:#4ade80; --sold:#f87171; --shadow:0 10px 30px rgba(0,0,0,.45); }
+
+      body {
+        margin: 0;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(900px 480px at 85% -120px, color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%),
+          radial-gradient(700px 420px at -10% 240px, color-mix(in srgb, var(--accent2) 10%, transparent), transparent 55%),
+          linear-gradient(180deg, var(--bg2), var(--bg) 340px);
+        background-color: var(--bg);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px 64px; }
+      .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+      /* ============ HEADER ============ */
+      header.hero { padding: 34px 0 8px; }
+      .hero-row { display: flex; align-items: flex-start; gap: 14px; flex-wrap: wrap; }
+      .mark {
+        width: 52px; height: 52px; flex: 0 0 auto; border-radius: 14px;
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+        display: grid; place-items: center; color: var(--accent-ink);
+        box-shadow: var(--shadow);
+      }
+      .mark svg { width: 30px; height: 30px; }
+      h1 {
+        font-family: "Bricolage Grotesque", "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(2rem, 7vw, 3.2rem); line-height: 1.02; margin: 0; font-weight: 800; letter-spacing: -.01em;
+      }
+      h1 .dot { color: var(--accent); }
+      .greeting { margin: 8px 0 0; color: var(--muted); font-size: 1rem; max-width: 56ch; }
+      .hero-stats { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+      .stat {
+        border: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 82%, transparent);
+        border-radius: 999px; padding: 6px 12px; font-size: .82rem; font-weight: 600; color: var(--muted);
+        display: inline-flex; align-items: center; gap: 7px;
+      }
+      .stat b { color: var(--ink); font-family: "JetBrains Mono", monospace; }
+      .stat .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 4px color-mix(in srgb, var(--good) 22%, transparent); }
+
+      /* ============ TAB ============ */
+      .tabbar {
+        position: sticky; top: 0; z-index: 20; margin: 20px -16px 0; padding: 10px 16px;
+        background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line);
+      }
+      .tabs { display: flex; gap: 6px; background: var(--surface2); border: 1px solid var(--line); border-radius: 14px; padding: 5px; max-width: 420px; }
+      .tabs button {
+        flex: 1; border: 0; border-radius: 10px; background: transparent; color: var(--muted);
+        font: inherit; font-weight: 700; font-size: .95rem; padding: 9px 10px; cursor: pointer;
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      }
+      .tabs button svg { width: 18px; height: 18px; }
+      .tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); box-shadow: var(--shadow); }
+
+      /* ============ PASAR ============ */
+      .toolbar { margin-top: 22px; display: grid; gap: 12px; }
+      .search { position: relative; }
+      .search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 19px; height: 19px; color: var(--muted); pointer-events: none; }
+      .search input {
+        width: 100%; padding: 13px 14px 13px 44px; border-radius: 14px; border: 1px solid var(--line);
+        background: var(--surface); color: var(--ink); font: inherit; font-size: 1rem; outline: none;
+      }
+      .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
+      .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+      .chip {
+        border: 1px solid var(--line); background: var(--surface); color: var(--muted);
+        border-radius: 999px; padding: 7px 13px; font: inherit; font-size: .86rem; font-weight: 700; cursor: pointer;
+        display: inline-flex; align-items: center; gap: 7px;
+      }
+      .chip svg { width: 15px; height: 15px; }
+      .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+      .grid { margin-top: 20px; display: grid; gap: 14px; grid-template-columns: 1fr; }
+      @media (min-width: 620px) { .grid { grid-template-columns: 1fr 1fr; } }
+      @media (min-width: 980px) { .grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+      .card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px;
+        display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); position: relative; overflow: hidden;
+      }
+      .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, var(--pc, var(--accent)), transparent 75%); }
+      .card.is-sold { opacity: .62; }
+      .card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+      .plat { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .9rem; }
+      .plat .pic {
+        width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; color: #fff;
+        background: var(--pc, var(--accent)); border: 1px solid rgba(255,255,255,.14);
+      }
+      .plat .pic svg { width: 19px; height: 19px; }
+      .status { font-size: .74rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 6px; padding: 5px 9px; border-radius: 999px; border: 1px solid var(--line); }
+      .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+      .status.avail { color: var(--good); background: color-mix(in srgb, var(--good) 10%, transparent); }
+      .status.sold { color: var(--sold); background: color-mix(in srgb, var(--sold) 10%, transparent); }
+      .handle { font-family: "JetBrains Mono", monospace; font-size: 1.28rem; font-weight: 700; margin: 2px 0 0; word-break: break-all; }
+      .followers { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: .9rem; font-weight: 600; margin: 0; }
+      .followers svg { width: 16px; height: 16px; }
+      .followers b { color: var(--ink); }
+      .desc { color: var(--muted); font-size: .92rem; line-height: 1.55; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+      .card-foot { margin-top: auto; padding-top: 8px; border-top: 1px dashed var(--line); display: grid; gap: 10px; }
+      .price { font-family: "JetBrains Mono", monospace; font-size: 1.35rem; font-weight: 700; color: var(--accent); }
+      [data-theme="terang-bersih"] .price { color: var(--accent); }
+      .price small { font-size: .8rem; color: var(--muted); font-family: "Plus Jakarta Sans", sans-serif; font-weight: 600; display: block; letter-spacing: .05em; text-transform: uppercase; }
+      .buy {
+        display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%;
+        background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 12px;
+        font: inherit; font-weight: 800; font-size: .98rem; padding: 12px 14px; cursor: pointer; text-decoration: none;
+      }
+      .buy svg { width: 19px; height: 19px; }
+      .buy.disabled { background: var(--surface2); color: var(--muted); cursor: not-allowed; box-shadow: none; }
+
+      .empty {
+        margin-top: 22px; border: 1.5px dashed var(--line); border-radius: 18px; padding: 38px 22px; text-align: center;
+        background: color-mix(in srgb, var(--surface) 60%, transparent);
+      }
+      .empty .big { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.35rem; font-weight: 800; margin: 10px 0 6px; }
+      .empty p { color: var(--muted); margin: 0 auto; max-width: 44ch; line-height: 1.6; }
+      .empty svg { width: 44px; height: 44px; color: var(--accent); }
+      .empty button { margin-top: 16px; }
+
+      /* ============ KELOLA ============ */
+      .panel {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px; margin-top: 18px; box-shadow: var(--shadow);
+      }
+      .panel h2 { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.25rem; margin: 0 0 4px; font-weight: 800; display: flex; align-items: center; gap: 10px; }
+      .panel h2 svg { width: 21px; height: 21px; color: var(--accent); }
+      .panel .sub { color: var(--muted); font-size: .9rem; margin: 0 0 16px; line-height: 1.55; }
+      .form-grid { display: grid; gap: 12px; }
+      @media (min-width: 640px) { .form-grid.two { grid-template-columns: 1fr 1fr; } .form-grid.three { grid-template-columns: 1fr 1fr 1fr; } }
+      label.field { display: grid; gap: 6px; font-size: .85rem; font-weight: 700; }
+      label.field span small { color: var(--muted); font-weight: 500; }
+      input.in, select.in, textarea.in {
+        width: 100%; padding: 11px 12px; border-radius: 11px; border: 1px solid var(--line);
+        background: var(--surface2); color: var(--ink); font: inherit; font-size: .95rem; font-weight: 500; outline: none;
+      }
+      textarea.in { resize: vertical; min-height: 74px; }
+      input.in:focus, select.in:focus, textarea.in:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 11px; border: 1px solid var(--line);
+        background: var(--surface2); color: var(--ink); font: inherit; font-weight: 800; font-size: .92rem; padding: 10px 16px; cursor: pointer; text-decoration: none;
+      }
+      .btn svg { width: 17px; height: 17px; }
+      .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+      .btn.danger { color: var(--sold); border-color: color-mix(in srgb, var(--sold) 45%, var(--line)); background: color-mix(in srgb, var(--sold) 8%, transparent); }
+      .btn.small { padding: 7px 12px; font-size: .84rem; border-radius: 9px; }
+      .btnrow { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 14px; }
+
+      .themes { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+      @media (min-width: 640px) { .themes { grid-template-columns: 1fr 1fr 1fr; } }
+      .theme-opt {
+        text-align: left; border: 1.5px solid var(--line); background: var(--surface2); border-radius: 14px; padding: 12px; cursor: pointer; font: inherit; color: var(--ink);
+        display: grid; gap: 9px;
+      }
+      .theme-opt .dots { display: flex; gap: 5px; }
+      .theme-opt .dots i { width: 20px; height: 20px; border-radius: 7px; border: 1px solid rgba(128,128,128,.35); display: block; }
+      .theme-opt .tname { font-weight: 800; font-size: .92rem; display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+      .theme-opt .tdesc { color: var(--muted); font-size: .78rem; font-weight: 500; line-height: 1.4; }
+      .theme-opt[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+      .theme-opt .check { color: var(--accent); font-size: .8rem; font-weight: 800; visibility: hidden; }
+      .theme-opt[aria-pressed="true"] .check { visibility: visible; }
+
+      .manage-list { display: grid; gap: 9px; margin-top: 16px; }
+      .mrow {
+        display: flex; align-items: center; gap: 11px; border: 1px solid var(--line); border-radius: 13px; padding: 11px 12px; background: var(--surface2); flex-wrap: wrap;
+      }
+      .mrow .pic { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; color: #fff; background: var(--pc, var(--accent)); flex: 0 0 auto; }
+      .mrow .pic svg { width: 19px; height: 19px; }
+      .mrow .minfo { flex: 1 1 150px; min-width: 0; }
+      .mrow .mhandle { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: .95rem; word-break: break-all; }
+      .mrow .mmeta { color: var(--muted); font-size: .8rem; font-weight: 600; }
+      .mrow .actions { display: flex; gap: 7px; flex-wrap: wrap; }
+      .none-note { color: var(--muted); font-size: .9rem; border: 1px dashed var(--line); border-radius: 12px; padding: 16px; text-align: center; margin-top: 14px; }
+
+      .gh-status { display: flex; gap: 10px; align-items: flex-start; border: 1px solid var(--line); border-radius: 12px; padding: 13px 14px; background: var(--surface2); font-size: .9rem; line-height: 1.55; }
+      .gh-status svg { width: 20px; height: 20px; flex: 0 0 auto; margin-top: 1px; color: var(--accent); }
+      .gh-steps { color: var(--muted); font-size: .9rem; line-height: 1.65; margin: 14px 0 0; padding-left: 20px; }
+      .gh-steps b { color: var(--ink); }
+      pre.json {
+        margin: 14px 0 0; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px;
+        font-family: "JetBrains Mono", monospace; font-size: .76rem; line-height: 1.55; color: var(--muted);
+        max-height: 300px; overflow: auto; white-space: pre-wrap; word-break: break-word;
+      }
+      a.repo-link { color: var(--accent); font-weight: 700; word-break: break-all; }
+
+      footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+      footer .fname { font-weight: 800; color: var(--ink); }
+
+      #toast {
+        position: fixed; left: 50%; bottom: 22px; transform: translate(-50%, 80px); z-index: 50;
+        background: var(--ink); color: var(--bg); font-weight: 700; font-size: .9rem; padding: 12px 18px; border-radius: 12px;
+        box-shadow: var(--shadow); opacity: 0; transition: transform .25s ease, opacity .25s ease; max-width: calc(100vw - 32px); text-align: center; pointer-events: none;
+      }
+      #toast.show { transform: translate(-50%, 0); opacity: 1; }
+      .hidden { display: none !important; }
+      @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div class="hero-row">
+          <div class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.7-5h14.6L21 9"/><path d="M4 9h16v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9.5 20v-6h5v6"/></svg>
+          </div>
+          <div>
+            <h1><span id="store-name">Pasar Akun</span><span class="dot">.</span></h1>
+            <p class="greeting" id="store-greeting">Etalase jual beli akun sosial media.</p>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <span class="stat"><span class="pulse" aria-hidden="true"></span><b id="stat-avail">0</b> akun tersedia</span>
+          <span class="stat"><b id="stat-total">0</b> total akun di etalase</span>
+        </div>
+      </header>
+
+      <div class="tabbar">
+        <div class="tabs" role="tablist" aria-label="Navigasi utama">
+          <button id="tab-pasar" role="tab" aria-selected="true" data-tab="pasar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.7-5h14.6L21 9"/><path d="M4 9h16v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9.5 20v-6h5v6"/></svg>
+            Pasar
+          </button>
+          <button id="tab-kelola" role="tab" aria-selected="false" data-tab="kelola">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Kelola
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= PASAR ================= -->
+      <main id="view-pasar">
+        <div class="toolbar">
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input id="search" type="search" placeholder="Cari handle atau kata kunci… mis. @akun, gaming, masak" autocomplete="off" />
+          </div>
+          <div class="chips" id="chips" role="group" aria-label="Filter platform"></div>
+        </div>
+
+        <section class="grid" id="grid" aria-live="polite"></section>
+
+        <div class="empty hidden" id="empty-all">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.7-5h14.6L21 9"/><path d="M4 9h16v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9.5 20v-6h5v6"/></svg>
+          <div class="big">Etalase masih kosong</div>
+          <p>Belum ada akun yang dijual saat ini. Silakan mampir lagi nanti — akun baru akan tampil di sini begitu pemilik pasar menambahkannya.</p>
+        </div>
+
+        <div class="empty hidden" id="empty-filter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8.5 8.5l5 5M13.5 8.5l-5 5"/></svg>
+          <div class="big">Tidak ada yang cocok</div>
+          <p>Tidak ada akun yang sesuai dengan pencarian atau filter platform ini. Coba kata kunci lain.</p>
+          <button class="btn" id="reset-filter" type="button">Atur ulang pencarian</button>
+        </div>
+      </main>
+
+      <!-- ================= KELOLA ================= -->
+      <section id="view-kelola" class="hidden">
+        <div class="panel">
+          <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.7-5h14.6L21 9"/><path d="M4 9h16v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/></svg>Pengaturan Toko</h2>
+          <p class="sub">Nama pasar, slogan, dan nomor WhatsApp tujuan tombol “Beli”. Perubahan tersimpan di perangkat ini sebagai cadangan, dan masuk ke data JSON untuk diterbitkan lewat GitHub.</p>
+          <div class="form-grid two">
+            <label class="field"><span>Nama pasar</span>
+              <input class="in" id="s-name" type="text" placeholder="Pasar Akun" maxlength="60" />
+            </label>
+            <label class="field"><span>Nomor WhatsApp penjual <small>(format 08… atau 628…)</small></span>
+              <input class="in" id="s-whatsapp" type="tel" inputmode="tel" placeholder="08xxxxxxxxxx" maxlength="20" />
+            </label>
+          </div>
+          <label class="field" style="margin-top:12px"><span>Slogan / sapaan</span>
+            <input class="in" id="s-greeting" type="text" placeholder="Akun sosial media siap pakai, langsung chat penjual." maxlength="140" />
+          </label>
+          <div class="btnrow">
+            <button class="btn primary" id="save-settings" type="button">Simpan pengaturan</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".8"/><circle cx="17.5" cy="10.5" r=".8"/><circle cx="8.5" cy="7.5" r=".8"/><circle cx="6.5" cy="12.5" r=".8"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.16-.84-.42-1.16-.25-.3-.42-.69-.42-1.12A1.68 1.68 0 0 1 14.5 16.5h2.05A5.46 5.46 0 0 0 22 11.05C21.95 6.03 17.4 2 12 2z"/></svg>Pilih Tema Tampilan</h2>
+          <p class="sub">Tema langsung diterapkan ke seluruh halaman begitu dipilih. Agar pengunjung ikut melihat tema ini, terbitkan data terbaru lewat panel GitHub di bawah.</p>
+          <div class="themes" id="themes"></div>
+        </div>
+
+        <div class="panel">
+          <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg><span id="form-title">Tambah Akun Jualan</span></h2>
+          <p class="sub">Isi data akun yang dijual. Akun berstatus “Tersedia” bisa dibeli lewat tombol WhatsApp di etalase.</p>
+          <div class="form-grid two">
+            <label class="field"><span>Platform</span>
+              <select class="in" id="f-platform"></select>
+            </label>
+            <label class="field"><span>Nama / handle akun</span>
+              <input class="in" id="f-handle" type="text" placeholder="@namanya" maxlength="60" />
+            </label>
+            <label class="field"><span>Jumlah followers</span>
+              <input class="in" id="f-followers" type="number" min="0" step="1" inputmode="numeric" placeholder="0" />
+            </label>
+            <label class="field"><span>Harga (Rupiah)</span>
+              <input class="in" id="f-price" type="number" min="0" step="1000" inputmode="numeric" placeholder="0" />
+            </label>
+          </div>
+          <label class="field" style="margin-top:12px"><span>Deskripsi singkat</span>
+            <textarea class="in" id="f-desc" placeholder="Niche akun, tahun dibuat, kondisi akun, kelengkapan data, dsb." maxlength="400"></textarea>
+          </label>
+          <label class="field" style="margin-top:12px"><span>Status</span>
+            <select class="in" id="f-status">
+              <option value="tersedia">Tersedia</option>
+              <option value="terjual">Terjual</option>
+            </select>
+          </label>
+          <div class="btnrow">
+            <button class="btn primary" id="save-account" type="button">Simpan akun</button>
+            <button class="btn hidden" id="cancel-edit" type="button">Batal ubah</button>
+          </div>
+          <div class="manage-list" id="manage-list"></div>
+          <div class="none-note hidden" id="manage-none">Belum ada akun. Tambahkan akun pertama lewat formulir di atas.</div>
+        </div>
+
+        <div class="panel">
+          <h2><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>Data Akun di GitHub</h2>
+          <p class="sub">Situs ini membaca data dari file <span class="mono">accounts.json</span> di repo GitHub. Perubahan di tab Kelola tersimpan lokal di perangkat ini sebagai cadangan — terbitkan ke GitHub agar terlihat oleh semua pengunjung.</p>
+          <div class="gh-status" id="gh-status">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+            <div id="gh-status-text">Memuat data…</div>
+          </div>
+          <ol class="gh-steps">
+            <li>Klik <b>“Salin data akun (JSON)”</b> di bawah untuk menyalin data terbaru (pengaturan, tema, dan semua akun).</li>
+            <li>Buka repo <a class="repo-link" href="https://github.com/dimasmohamadjulius-cell/pasar-akun-data" target="_blank" rel="noopener">dimasmohamadjulius-cell/pasar-akun-data</a>, buka file <b>accounts.json</b>, lalu klik ikon pensil (Edit).</li>
+            <li>Hapus isi lama, tempel JSON yang disalin, lalu klik <b>Commit changes</b>. Situs terbarui otomatis dalam beberapa menit.</li>
+          </ol>
+          <div class="btnrow">
+            <button class="btn primary" id="copy-json" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Salin data akun (JSON)
+            </button>
+            <button class="btn" id="reload-data" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+              Muat ulang dari GitHub
+            </button>
+            <a class="btn" href="https://github.com/dimasmohamadjulius-cell/pasar-akun-data/blob/main/accounts.json" target="_blank" rel="noopener">Buka file accounts.json</a>
+          </div>
+          <pre class="json" id="json-view" aria-label="Data akun saat ini dalam format JSON" tabindex="0"></pre>
+        </div>
+      </section>
+
+      <footer>
+        <span><span class="fname" id="foot-name">Pasar Akun</span> — jual beli akun sosial media.</span>
+        <span>Pembayaran &amp; serah terima akun diatur langsung antara pembeli dan penjual via WhatsApp.</span>
+      </footer>
+    </div>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      "use strict";
+      var DATA_URL = "https://raw.githubusercontent.com/dimasmohamadjulius-cell/pasar-akun-data/main/accounts.json";
+      var LOCAL_KEY = "pasar-akun-data-v1";
+
+      var ICONS = {
+        instagram: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.6" fill="currentColor" stroke="none"/></svg>',
+        tiktok: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>',
+        facebook: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>',
+        youtube: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>',
+        x: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H4.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
+        telegram: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>',
+        whatsapp: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+        lainnya: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.5 2.4 3.8 5.6 3.8 9.2s-1.3 6.8-3.8 9.2c-2.5-2.4-3.8-5.6-3.8-9.2s1.3-6.8 3.8-9.2z"/></svg>'
+      };
+      var WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>';
+      var USERS_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
+
+      var PLATFORMS = [
+        { id: "instagram", name: "Instagram", color: "#d62976" },
+        { id: "tiktok", name: "TikTok", color: "#161823" },
+        { id: "facebook", name: "Facebook", color: "#1877f2" },
+        { id: "youtube", name: "YouTube", color: "#e62117" },
+        { id: "x", name: "X", color: "#000000" },
+        { id: "telegram", name: "Telegram", color: "#229ed9" },
+        { id: "whatsapp", name: "WhatsApp", color: "#1faa55" },
+        { id: "lainnya", name: "Lainnya", color: "#64748b" }
+      ];
+      function platformOf(id) {
+        for (var i = 0; i < PLATFORMS.length; i++) if (PLATFORMS[i].id === id) return PLATFORMS[i];
+        return PLATFORMS[PLATFORMS.length - 1];
+      }
+
+      var THEMES = [
+        { id: "gelap-neon", name: "Gelap Neon", desc: "Hitam pekat dengan aksen neon hijau–biru.", dots: ["#060a13", "#2bffb8", "#38bdf8"] },
+        { id: "terang-bersih", name: "Terang Bersih", desc: "Putih terang, biru tegas, enak dibaca siang hari.", dots: ["#ffffff", "#0f62fe", "#0891b2"] },
+        { id: "emas-mewah", name: "Emas Mewah", desc: "Hitam elegan dengan sentuhan emas klasik.", dots: ["#0a0805", "#e3b93c", "#f5d67b"] },
+        { id: "laut-dalam", name: "Laut Dalam", desc: "Biru laut dalam dengan aksen sian menyala.", dots: ["#03141f", "#22d3ee", "#2dd4bf"] },
+        { id: "senja", name: "Senja", desc: "Ungu kemerahan hangat seperti langit sore.", dots: ["#1f0c16", "#ff7a4d", "#ffb03a"] },
+        { id: "hutan", name: "Hutan", desc: "Hijau gelap teduh dengan aksen daun segar.", dots: ["#08130c", "#4ade80", "#a3e635"] }
+      ];
+      function themeKnown(id) { for (var i = 0; i < THEMES.length; i++) if (THEMES[i].id === id) return true; return false; }
+
+      var DEFAULTS = {
+        store: { name: "Pasar Akun", greeting: "Akun sosial media siap pakai — pilih di etalase, lalu chat penjual langsung via WhatsApp.", whatsapp: "" },
+        theme: "gelap-neon",
+        accounts: []
+      };
+
+      var state = JSON.parse(JSON.stringify(DEFAULTS));
+      var dataSource = "memuat"; // memuat | github | lokal | kosong
+      var filterPlatform = "semua";
+      var editingId = null;
+      var pendingDeleteId = null;
+
+      function $(id) { return document.getElementById(id); }
+      function esc(s) {
+        return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+        });
+      }
+      function fmtPrice(n) {
+        n = Math.max(0, Math.round(Number(n) || 0));
+        return "Rp " + n.toLocaleString("id-ID");
+      }
+      function fmtFollowers(n) {
+        n = Math.max(0, Math.round(Number(n) || 0));
+        function trim(v) { return v.toFixed(1).replace(".", ",").replace(/,0$/, ""); }
+        if (n >= 1000000) return trim(n / 1000000) + " jt";
+        if (n >= 1000) return trim(n / 1000) + " rb";
+        return String(n);
+      }
+      function normalizeWA(raw) {
+        var d = String(raw || "").replace(/\D/g, "");
+        if (d.charAt(0) === "0") d = "62" + d.slice(1);
+        return d;
+      }
+      function toast(msg) {
+        var t = $("toast"); t.textContent = msg; t.classList.add("show");
+        clearTimeout(toast._h); toast._h = setTimeout(function () { t.classList.remove("show"); }, 2600);
+      }
+
+      function sanitize(data) {
+        var out = JSON.parse(JSON.stringify(DEFAULTS));
+        if (!data || typeof data !== "object") return out;
+        if (data.store && typeof data.store === "object") {
+          if (typeof data.store.name === "string" && data.store.name.trim()) out.store.name = data.store.name.trim();
+          if (typeof data.store.greeting === "string") out.store.greeting = data.store.greeting;
+          if (typeof data.store.whatsapp === "string") out.store.whatsapp = data.store.whatsapp;
+        }
+        if (typeof data.theme === "string" && themeKnown(data.theme)) out.theme = data.theme;
+        if (Array.isArray(data.accounts)) {
+          out.accounts = data.accounts.filter(function (a) { return a && typeof a === "object"; }).map(function (a, i) {
+            return {
+              id: typeof a.id === "string" && a.id ? a.id : "akun-" + (i + 1),
+              platform: typeof a.platform === "string" ? a.platform : "lainnya",
+              handle: typeof a.handle === "string" ? a.handle : "",
+              followers: Number(a.followers) || 0,
+              price: Number(a.price) || 0,
+              description: typeof a.description === "string" ? a.description : "",
+              status: a.status === "terjual" ? "terjual" : "tersedia"
+            };
+          });
+        }
+        return out;
+      }
+
+      function saveLocal() {
+        try { localStorage.setItem(LOCAL_KEY, JSON.stringify(state)); } catch (e) { /* penyimpanan tidak tersedia */ }
+      }
+      function readLocal() {
+        try {
+          var raw = localStorage.getItem(LOCAL_KEY);
+          return raw ? sanitize(JSON.parse(raw)) : null;
+        } catch (e) { return null; }
+      }
+
+      function exportJSON() {
+        return JSON.stringify({ store: state.store, theme: state.theme, accounts: state.accounts }, null, 2);
+      }
+
+      /* ---------- Render ---------- */
+      function applyChrome() {
+        document.documentElement.setAttribute("data-theme", state.theme);
+        $("store-name").textContent = state.store.name;
+        $("foot-name").textContent = state.store.name;
+        $("store-greeting").textContent = state.store.greeting || "";
+        document.title = state.store.name + " — Jual Beli Akun Sosial Media";
+        var desc = (state.store.greeting || "Etalase jual beli akun sosial media.") + " Beli akun Instagram, TikTok, Facebook, YouTube, X, dan Telegram langsung via WhatsApp.";
+        $("meta-desc").setAttribute("content", desc);
+        $("og-title").setAttribute("content", state.store.name + " — Jual Beli Akun Sosial Media");
+        $("og-desc").setAttribute("content", desc);
+        var avail = state.accounts.filter(function (a) { return a.status === "tersedia"; }).length;
+        $("stat-avail").textContent = avail;
+        $("stat-total").textContent = state.accounts.length;
+        var themeColor = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+        if (themeColor) {
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute("content", themeColor);
+        }
+      }
+
+      function renderChips() {
+        var html = '<button class="chip" type="button" data-plat="semua" aria-pressed="' + (filterPlatform === "semua") + '">Semua platform</button>';
+        PLATFORMS.forEach(function (p) {
+          var count = state.accounts.filter(function (a) { return a.platform === p.id; }).length;
+          if (!count && filterPlatform !== p.id) return;
+          html += '<button class="chip" type="button" data-plat="' + p.id + '" aria-pressed="' + (filterPlatform === p.id) + '">' + (ICONS[p.id] || "") + esc(p.name) + "</button>";
+        });
+        $("chips").innerHTML = html;
+        Array.prototype.forEach.call($("chips").querySelectorAll("button"), function (b) {
+          b.addEventListener("click", function () { filterPlatform = b.getAttribute("data-plat"); renderMarket(); });
+        });
+      }
+
+      function buyLink(a) {
+        var num = normalizeWA(state.store.whatsapp);
+        if (!num) return null;
+        var p = platformOf(a.platform);
+        var msg = "Halo, saya tertarik membeli akun ini:\n\nPlatform: " + p.name + "\nHandle: " + a.handle + "\nHarga: " + fmtPrice(a.price) + "\n\nApakah masih tersedia? Terima kasih.";
+        return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
+      }
+
+      function renderMarket() {
+        renderChips();
+        var q = $("search").value.trim().toLowerCase();
+        var list = state.accounts.filter(function (a) {
+          if (filterPlatform !== "semua" && a.platform !== filterPlatform) return false;
+          if (!q) return true;
+          var p = platformOf(a.platform);
+          var hay = (a.handle + " " + a.description + " " + p.name).toLowerCase();
+          return hay.indexOf(q) !== -1;
+        });
+        // Tersedia dulu, lalu terjual
+        list.sort(function (x, y) { return (x.status === "tersedia" ? 0 : 1) - (y.status === "tersedia" ? 0 : 1); });
+
+        $("empty-all").classList.toggle("hidden", state.accounts.length !== 0);
+        $("empty-filter").classList.toggle("hidden", !(state.accounts.length > 0 && list.length === 0));
+
+        $("grid").innerHTML = list.map(function (a) {
+          var p = platformOf(a.platform);
+          var sold = a.status === "terjual";
+          var link = sold ? null : buyLink(a);
+          var buy;
+          if (sold) {
+            buy = '<button class="buy disabled" type="button" disabled>Sudah terjual</button>';
+          } else if (link) {
+            buy = '<a class="buy" href="' + link + '" target="_blank" rel="noopener">' + WA_ICON + "Beli via WhatsApp</a>";
+          } else {
+            buy = '<button class="buy disabled" type="button" data-nowa="1">Beli via WhatsApp</button>';
+          }
+          return '<article class="card' + (sold ? " is-sold" : "") + '" style="--pc:' + p.color + '">' +
+            '<div class="card-top"><span class="plat"><span class="pic">' + (ICONS[p.id] || ICONS.lainnya) + "</span>" + esc(p.name) + "</span>" +
+            '<span class="status ' + (sold ? "sold" : "avail") + '">' + (sold ? "Terjual" : "Tersedia") + "</span></div>" +
+            '<h3 class="handle">' + esc(a.handle || "—") + "</h3>" +
+            '<p class="followers">' + USERS_ICON + "<span><b>" + fmtFollowers(a.followers) + "</b> pengikut</span></p>" +
+            (a.description ? '<p class="desc">' + esc(a.description) + "</p>" : "") +
+            '<div class="card-foot"><div class="price"><small>Harga</small>' + fmtPrice(a.price) + "</div>" + buy + "</div>" +
+            "</article>";
+        }).join("");
+
+        Array.prototype.forEach.call($("grid").querySelectorAll("[data-nowa]"), function (b) {
+          b.addEventListener("click", function () { toast("Penjual belum mengatur nomor WhatsApp. Coba lagi nanti, ya."); });
+        });
+      }
+
+      function renderThemes() {
+        $("themes").innerHTML = THEMES.map(function (t) {
+          var dots = t.dots.map(function (d) { return '<i style="background:' + d + '"></i>'; }).join("");
+          return '<button class="theme-opt" type="button" data-theme-id="' + t.id + '" aria-pressed="' + (state.theme === t.id) + '">' +
+            '<span class="dots">' + dots + "</span>" +
+            '<span class="tname">' + esc(t.name) + '<span class="check">Dipakai ✓</span></span>' +
+            '<span class="tdesc">' + esc(t.desc) + "</span></button>";
+        }).join("");
+        Array.prototype.forEach.call($("themes").querySelectorAll("button"), function (b) {
+          b.addEventListener("click", function () {
+            state.theme = b.getAttribute("data-theme-id");
+            saveLocal(); applyAll(false);
+            toast("Tema “" + b.querySelector(".tname").firstChild.textContent + "” diterapkan.");
+          });
+        });
+      }
+
+      function renderManageList() {
+        var list = $("manage-list");
+        $("manage-none").classList.toggle("hidden", state.accounts.length !== 0);
+        list.innerHTML = state.accounts.map(function (a) {
+          var p = platformOf(a.platform);
+          var confirming = pendingDeleteId === a.id;
+          return '<div class="mrow" style="--pc:' + p.color + '">' +
+            '<span class="pic">' + (ICONS[p.id] || ICONS.lainnya) + "</span>" +
+            '<div class="minfo"><div class="mhandle">' + esc(a.handle || "—") + '</div>' +
+            '<div class="mmeta">' + esc(p.name) + " · " + fmtFollowers(a.followers) + " pengikut · " + fmtPrice(a.price) + " · " + (a.status === "terjual" ? "Terjual" : "Tersedia") + "</div></div>" +
+            '<div class="actions">' +
+            (confirming
+              ? '<button class="btn small danger" type="button" data-del-yes="' + a.id + '">Ya, hapus</button><button class="btn small" type="button" data-del-no="1">Batal</button>'
+              : '<button class="btn small" type="button" data-edit="' + a.id + '">Ubah</button><button class="btn small danger" type="button" data-del="' + a.id + '">Hapus</button>') +
+            "</div></div>";
+        }).join("");
+        list.querySelectorAll("[data-edit]").forEach(function (b) { b.addEventListener("click", function () { startEdit(b.getAttribute("data-edit")); }); });
+        list.querySelectorAll("[data-del]").forEach(function (b) { b.addEventListener("click", function () { pendingDeleteId = b.getAttribute("data-del"); renderManageList(); }); });
+        list.querySelectorAll("[data-del-no]").forEach(function (b) { b.addEventListener("click", function () { pendingDeleteId = null; renderManageList(); }); });
+        list.querySelectorAll("[data-del-yes]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var id = b.getAttribute("data-del-yes");
+            state.accounts = state.accounts.filter(function (a) { return a.id !== id; });
+            if (editingId === id) resetForm();
+            pendingDeleteId = null; saveLocal(); applyAll(false);
+            toast("Akun dihapus.");
+          });
+        });
+      }
+
+      function renderGithub() {
+        var txt = {
+          memuat: "Sedang memuat data dari GitHub…",
+          github: "<b>Data berhasil dimuat dari GitHub.</b> Yang tampil di situs sekarang sama dengan isi file accounts.json di repo.",
+          lokal: "<b>File accounts.json belum ditemukan di GitHub</b> (atau gagal dimuat), jadi situs menampilkan cadangan data dari perangkat ini. Buat file accounts.json di repo, lalu tempel JSON dari tombol salin di bawah agar data terbit untuk semua pengunjung.",
+          kosong: "<b>File accounts.json belum ditemukan di GitHub</b> dan belum ada cadangan lokal — situs menampilkan etalase kosong. Tambahkan akun di tab Kelola, lalu terbitkan lewat langkah di bawah."
+        };
+        $("gh-status-text").innerHTML = txt[dataSource] || txt.kosong;
+        $("json-view").textContent = exportJSON();
+      }
+
+      function fillSettings() {
+        $("s-name").value = state.store.name;
+        $("s-greeting").value = state.store.greeting;
+        $("s-whatsapp").value = state.store.whatsapp;
+      }
+
+      function applyAll(refill) {
+        applyChrome(); renderMarket(); renderThemes(); renderManageList(); renderGithub();
+        if (refill) fillSettings();
+      }
+
+      /* ---------- Form akun ---------- */
+      function fillPlatformSelect() {
+        $("f-platform").innerHTML = PLATFORMS.map(function (p) { return '<option value="' + p.id + '">' + esc(p.name) + "</option>"; }).join("");
+      }
+      function resetForm() {
+        editingId = null;
+        $("form-title").textContent = "Tambah Akun Jualan";
+        $("save-account").textContent = "Simpan akun";
+        $("cancel-edit").classList.add("hidden");
+        $("f-platform").value = "instagram";
+        $("f-handle").value = ""; $("f-followers").value = ""; $("f-price").value = "";
+        $("f-desc").value = ""; $("f-status").value = "tersedia";
+      }
+      function startEdit(id) {
+        var a = null;
+        state.accounts.forEach(function (x) { if (x.id === id) a = x; });
+        if (!a) return;
+        editingId = id;
+        $("form-title").textContent = "Ubah Akun";
+        $("save-account").textContent = "Simpan perubahan";
+        $("cancel-edit").classList.remove("hidden");
+        $("f-platform").value = a.platform;
+        $("f-handle").value = a.handle;
+        $("f-followers").value = a.followers || "";
+        $("f-price").value = a.price || "";
+        $("f-desc").value = a.description;
+        $("f-status").value = a.status;
+        $("f-handle").focus();
+        window.scrollTo({ top: $("f-platform").getBoundingClientRect().top + window.scrollY - 90, behavior: "smooth" });
+      }
+
+      /* ---------- Muat data ---------- */
+      function loadFromGithub(showToast) {
+        dataSource = "memuat"; renderGithub();
+        return fetch(DATA_URL, { cache: "no-store" })
+          .then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+          .then(function (json) {
+            state = sanitize(json);
+            dataSource = "github";
+            saveLocal();
+            applyAll(true);
+            if (showToast) toast("Data terbaru dimuat dari GitHub.");
+          })
+          .catch(function () {
+            var local = readLocal();
+            if (local) { state = local; dataSource = "lokal"; }
+            else { state = JSON.parse(JSON.stringify(DEFAULTS)); dataSource = "kosong"; }
+            applyAll(true);
+            if (showToast) toast("GitHub belum bisa dijangkau — menampilkan data yang ada.");
+          });
+      }
+
+      /* ---------- Event ---------- */
+      document.querySelectorAll(".tabs button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var tab = b.getAttribute("data-tab");
+          document.querySelectorAll(".tabs button").forEach(function (x) { x.setAttribute("aria-selected", x === b ? "true" : "false"); });
+          $("view-pasar").classList.toggle("hidden", tab !== "pasar");
+          $("view-kelola").classList.toggle("hidden", tab !== "kelola");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+      $("search").addEventListener("input", renderMarket);
+      $("reset-filter").addEventListener("click", function () {
+        $("search").value = ""; filterPlatform = "semua"; renderMarket();
+      });
+
+      $("save-settings").addEventListener("click", function () {
+        var name = $("s-name").value.trim();
+        if (!name) { toast("Nama pasar tidak boleh kosong."); return; }
+        state.store.name = name;
+        state.store.greeting = $("s-greeting").value.trim();
+        state.store.whatsapp = $("s-whatsapp").value.trim();
+        saveLocal(); applyAll(false);
+        toast("Pengaturan toko disimpan di perangkat ini.");
+      });
+
+      $("save-account").addEventListener("click", function () {
+        var handle = $("f-handle").value.trim();
+        if (!handle) { toast("Isi dulu nama / handle akunnya."); $("f-handle").focus(); return; }
+        var data = {
+          platform: $("f-platform").value,
+          handle: handle,
+          followers: Math.max(0, Math.round(Number($("f-followers").value) || 0)),
+          price: Math.max(0, Math.round(Number($("f-price").value) || 0)),
+          description: $("f-desc").value.trim(),
+          status: $("f-status").value === "terjual" ? "terjual" : "tersedia"
+        };
+        if (editingId) {
+          state.accounts.forEach(function (a) { if (a.id === editingId) { for (var k in data) a[k] = data[k]; } });
+          toast("Akun diperbarui.");
+        } else {
+          data.id = "akun-" + Date.now().toString(36) + Math.floor(Math.random() * 999).toString(36);
+          state.accounts.unshift(data);
+          toast("Akun ditambahkan ke etalase.");
+        }
+        resetForm(); saveLocal(); applyAll(false);
+      });
+      $("cancel-edit").addEventListener("click", resetForm);
+
+      $("reload-data").addEventListener("click", function () { loadFromGithub(true); });
+      $("copy-json").addEventListener("click", function () {
+        var text = exportJSON();
+        function done() { toast("Data akun (JSON) tersalin — tempel ke accounts.json di GitHub."); }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); done(); });
+        } else { fallbackCopy(text); done(); }
+      });
+      function fallbackCopy(text) {
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); } catch (e) { /* abaikan */ }
+        document.body.removeChild(ta);
+      }
+
+      /* ---------- Mulai ---------- */
+      fillPlatformSelect();
+      resetForm();
+      applyAll(true);
+      loadFromGithub(false);
+    </script>
+  </body>
+</html>
